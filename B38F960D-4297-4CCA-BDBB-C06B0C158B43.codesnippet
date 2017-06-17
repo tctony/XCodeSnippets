@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@retainify</string>
+	<string>@strongify</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@retainify(&lt;#...#&gt;);</string>
+	<string>@strongify(&lt;#...#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C67F7454-4C20-4FCA-91D6-4C3494AB2A50</string>
+	<string>B38F960D-4297-4CCA-BDBB-C06B0C158B43</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Block Retainify</string>
+	<string>Block Strongify</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
