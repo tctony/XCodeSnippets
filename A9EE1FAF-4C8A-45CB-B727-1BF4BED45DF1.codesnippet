@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvopath2</string>
+	<string>sharedInst</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@keypath2(&lt;#OBJ#&gt;, &lt;#PATH#&gt;)</string>
+	<string>+ (instancetype)sharedInstance
+{
+    static &lt;#class#&gt; *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        instance = [&lt;#class#&gt; new];
+    });
+    return instance;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E4EDC189-8A87-4870-B834-A4D962FBCDD8</string>
+	<string>A9EE1FAF-4C8A-45CB-B727-1BF4BED45DF1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>keypath2</string>
+	<string>SharedIntance</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

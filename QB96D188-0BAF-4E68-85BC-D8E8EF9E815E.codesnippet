@@ -3,19 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvopath2</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@keypath2(&lt;#OBJ#&gt;, &lt;#PATH#&gt;)</string>
+	<string>+ (instancetype)sharedInstance
+{
+    static &lt;#class name#&gt; *instance = nil;
+    static dispatch_once_t _once;
+    dispatch_once (&amp;_once, ^() {
+        &lt;#code to be executed once#&gt;
+    });
+    return instance;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E4EDC189-8A87-4870-B834-A4D962FBCDD8</string>
+	<string>2C96D188-0BAF-4E68-85BC-D8E8EF9E815E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Class method that returns a singleton instance</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>keypath2</string>
+	<string>Shared Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

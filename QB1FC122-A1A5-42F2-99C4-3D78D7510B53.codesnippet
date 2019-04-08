@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvopath2</string>
+	<string>dispatch_main_async_safe</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@keypath2(&lt;#OBJ#&gt;, &lt;#PATH#&gt;)</string>
+	<string>        if ([NSThread isMainThread]) {
+            &lt;#statements#&gt;
+        } else {
+            dispatch_async(dispatch_get_main_queue(), &lt;#^(void)block#&gt;);
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E4EDC189-8A87-4870-B834-A4D962FBCDD8</string>
+	<string>191FC122-A1A5-42F2-99C4-3D78D7510B53</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>keypath2</string>
+	<string>Dispatch Main Async Safe</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

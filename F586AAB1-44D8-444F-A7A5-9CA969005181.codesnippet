@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvopath2</string>
+	<string>iosavailable</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@keypath2(&lt;#OBJ#&gt;, &lt;#PATH#&gt;)</string>
+	<string>#if __IPHONE_OS_VERSION_MAX_ALLOWED &gt;= &lt;#110000#&gt;
+    if (@available(iOS &lt;#11.0#&gt;, *)) {
+        &lt;#code#&gt;
+    }
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E4EDC189-8A87-4870-B834-A4D962FBCDD8</string>
+	<string>F586AAB1-44D8-444F-A7A5-9CA969005181</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>keypath2</string>
+	<string>iOS Available</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
