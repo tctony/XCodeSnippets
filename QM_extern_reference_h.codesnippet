@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>kvopath1</string>
+	<string>externRefInH</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@keypath1(&lt;#PATH#&gt;)</string>
+	<string>extern &lt;#type#&gt; *const &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6EF005D4-C203-400E-ACEE-2702E9AC181C</string>
+	<string>21FDCAF1-C5B5-4F0C-A9EE-895654127294</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>keypath1</string>
+	<string>extern Reference in *.h file</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
